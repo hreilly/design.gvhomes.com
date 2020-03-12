@@ -27,11 +27,12 @@ $plan = get_field('plan_shown');
         }
     }
     .entry-caption {
-        margin: 20px;
+        margin: 20px auto;
         padding: 20px 40px;
         position: relative;
         border-top: 2px solid var(--accent-color-2-half-op);
         border-bottom: 2px solid var(--accent-color-2-half-op);
+        max-width: var(--mid-max-width);
     }
     .entry-caption p {
         margin: 0;
@@ -172,7 +173,7 @@ $plan = get_field('plan_shown');
                             <div></div>
                             <div></div>
                         </div>
-                        <h2 style="font-size: 1.3rem; padding: 20px; margin: 0;">Our designers selected the following options for this <?php echo get_the_title( $plan->ID ); ?>:</h2>
+                        <h2 style="font-size: 1.3rem; padding: 50px 20px 20px; margin: 0; max-width: 30ch;">Our designers selected the following options for this <?php echo get_the_title( $plan->ID ); ?>:</h2>
                     </div>
 
                     <?php endif; ?>

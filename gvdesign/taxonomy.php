@@ -65,7 +65,7 @@ $taxName = get_taxonomy($tax)->labels->singular_name;
 
                 <?php if ($standardtoggle != 'true') : ?>
 
-                <p style="margin: 20px auto 120px auto; text-align: center;"><?php the_field('upgrade_disclaimer', 'option'); ?></p>
+                <p class="disclaimer aligncenter"><?php the_field('upgrade_disclaimer', 'option'); ?></p>
 
                 <?php endif; ?>
 
